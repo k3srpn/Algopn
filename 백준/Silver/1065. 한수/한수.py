@@ -1,5 +1,3 @@
-X = input()
-
 def hansu(a: list) -> int:
     cnt = 0
     arr_length = len(a)
@@ -11,6 +9,7 @@ def hansu(a: list) -> int:
         cnt += 1
     return cnt
 
+X = input()
 num = 0
 for i in range(1, int(X)+1):
     if i < 100 : 
@@ -18,6 +17,4 @@ for i in range(1, int(X)+1):
     else:
         X_arr = [int(j) for j in str(i)]
         num += hansu(X_arr)
-
 print(num)
-    
