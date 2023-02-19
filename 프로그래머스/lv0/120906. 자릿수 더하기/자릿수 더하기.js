@@ -1,4 +1,3 @@
 function solution(n) {
-   	console.log(n.toString().split(''))
-    return n ? n.toString().split('').reduce((prev,curr)=> parseInt(prev)+parseInt(curr)): 0
+    return n.toString().split('').reduce((prev,curr)=>prev+Number(curr),0)
 }
